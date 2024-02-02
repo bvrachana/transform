@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 30px;
+    margin: 30px;
+    height: 100px;
+    width: 400px;
+    box-shadow: -3px -3px 3px #ccc, 3px 3px 3px #ccc;
+    border-radius: 10px;
+   transition: 2s;
+}
+.translate:hover{
+    transform: translate(100px, 100px);
+}
+.translateX:hover{
+    transform: translateX(-200px);
+}
+.translateY:hover{
+  transform: translateY(300px);
+}
+/* p2.html */
+.scale:hover{
+    transform: scale(1.2);
+}
+.scaleX:hover{
+    transform: scaleX(0.5);
+}
+.scaleY:hover{
+    transform: scaleY(0.4);
+}
+/*p3.html */
+.rotate:hover{
+    transform: rotate(360deg);
+}
+.rotateX:hover{
+    transform: rotateX(360deg);
+}
+.rotateY:hover{
+    transform: rotateY(360deg);
+}
+/* P4.HTML */
+.skew:hover{
+    transform: skew(45deg);
+}
+.skewX:hover{
+    transform: skewX(45deg);
+}
+.skewY:hover{
+    transform: skewY(45deg);
+}
+/* p5.html */
+.matrix1{
+    transform: matrix(1, 1, 0, 2, 120, 20);
+}
+.matrix2{
+    transform: matrix(1, 2, -1, 1, 80, 80 );
+}

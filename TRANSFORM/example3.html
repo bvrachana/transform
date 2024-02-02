@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: radial-gradient(#fda736,#371d00);
+            /* background-color: #060505;  */
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            background-color: #a08e03;
+            padding: 20px;
+            line-height: 2;
+            color: rgb(144, 41, 7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            transform: skew(20deg);
+            position: relative;
+            box-shadow: inset 10px 10px 10px #582002,  50px 50px  20px #371d00;  
+        }
+        .card::before{
+            content: "";
+            position: absolute;
+            background-color: #030303;
+            height: 100%;
+            width: 50px;
+            top: 17px;
+            left: -50px;
+            transform: skewY(-36deg);
+            box-shadow: inset 10px 10px 10px #3d2303, inset 10px 10px 20px #210c01;
+        }
+        .card::after{
+            content: "/";
+            position: absolute;
+            height: 33px;
+            width: 100%;
+            background-color: rgb(113, 110, 110);
+            background: repeating-linear-gradient(#5e5d5d 2%, #fff 10%);
+            bottom: -33px;
+            left: -23px;
+            transform: skewX(-55deg);
+        } 
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi, quo harum nam dicta ipsum non. Debitis harum dicta veniam assumenda repellendus voluptatum sint, voluptate, optio a iure fuga perspiciatis!</p>
+        </div>
+    </div>
+</body>
+</html>

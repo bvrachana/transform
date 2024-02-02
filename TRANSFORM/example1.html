@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            background-color: rgb(2, 0, 128);
+            min-height: 80vh;
+        }
+        .register{
+            padding: 5% 10%;
+        }
+        form{
+            background-color: #fff;
+            transform: translateY(-180px);
+            padding: 5%;
+            box-shadow: 0px 4px 4px #b6b6b6;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            gap: 30px;
+        }
+        input{
+            border: none;
+            outline: none;
+            border: 1px solid #bebebe;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        /* input:focus{
+            background-color: #2b0b7b;
+        } */
+        input:active{
+            /* background-color: #2b0b7b; */
+            border: 2px solid  black;
+        }
+        button{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: rgb(2, 0, 128);
+            color: #fff;
+            box-shadow: 2px 2px 40px #1d0cdb;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #1d0cdb;
+            transform: scale(1.8) translateY(-100px) translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+
+    </section>
+    <div class="register">
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Username">
+           <button>Create Account</button>
+         </form>
+    </div>
+</body>
+</html>
